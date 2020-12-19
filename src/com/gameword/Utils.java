@@ -1,8 +1,6 @@
 package com.gameword;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 /**
@@ -35,7 +33,8 @@ public class Utils {
     }
 
     /**
-     * The func that checks whether the entered word begins with the first letter of the last word.
+     * The func that checks whether the entered word begins
+     * with the first letter of the last word.
      *
      * @param lastWord    entering Last word
      * @param currentWord cmd input current word
