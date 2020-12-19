@@ -1,8 +1,12 @@
 package com.gameword;
 
 import java.util.*;
+import static com.gameword.Utils.*;
+
 
 /**
+ * Attention : FOR JAVA BEGINNERS
+ *
  * The program is word game.
  * Check current word first character
  * from last word last character
@@ -12,56 +16,6 @@ import java.util.*;
  * https://beginnersbook.com/2013/05/first-java-program/
  */
 public class Main {
-
-    /**
-     * saved list
-     */
-    private static final List<String> WORD_LIST = new ArrayList<>();
-
-    /**
-     * check numeric
-     *
-     * @param str check string
-     * @return true or false
-     */
-    public static boolean isNumeric(String str) {
-        if (str == null || str.length() == 0) {
-            return false;
-        }
-        try {
-            Double.parseDouble(str);
-            return true;
-        } catch (NumberFormatException e) {
-            return false;
-        }
-    }
-
-    /**
-     * The func that checks whether the entered word begins with the first letter of the last word.
-     *
-     * @param lastWord entering Last word
-     * @param currentWord cmd input current word
-     * @return ffff
-     */
-    private static boolean startLastChar(String lastWord, String currentWord) {
-        return currentWord.startsWith(lastWord.substring(lastWord.length() - 1));
-    }
-
-    /**
-     * Controls characters such as period, comma in the entered value
-     *
-     * @param str in string
-     * @return true or false
-     */
-    public static boolean isAlphanumeric(String str) {
-        char[] charArray = str.toCharArray();
-        for (char c : charArray) {
-            if (!Character.isLetterOrDigit(c)) {
-                return false;
-            }
-        }
-        return true;
-    }
 
     public static void main(String[] args) {
 
