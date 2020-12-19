@@ -1,17 +1,20 @@
 package com.gameword;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Util for main application
+ *
  * @author cevheri.bozoglan
  */
 public class Utils {
     /**
-     * saved list
+     * saved list set because this list is unique
      */
-    public static List<String> WORD_LIST = new ArrayList<>();
+    public static final Set<String> WORD_LIST = new HashSet<>();
 
     /**
      * check numeric
@@ -34,9 +37,9 @@ public class Utils {
     /**
      * The func that checks whether the entered word begins with the first letter of the last word.
      *
-     * @param lastWord entering Last word
+     * @param lastWord    entering Last word
      * @param currentWord cmd input current word
-     * @return ffff
+     * @return return true or false
      */
     public static boolean startLastChar(String lastWord, String currentWord) {
         return currentWord.startsWith(lastWord.substring(lastWord.length() - 1));

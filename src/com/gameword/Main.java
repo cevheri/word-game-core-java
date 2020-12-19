@@ -1,12 +1,14 @@
 package com.gameword;
 
 import java.util.*;
+
 import static com.gameword.Utils.*;
 
 
 /**
  * Attention : FOR JAVA BEGINNERS
  *
+ * <p>
  * The program is word game.
  * Check current word first character
  * from last word last character
